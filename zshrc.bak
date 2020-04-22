@@ -1,0 +1,25 @@
+#
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+#
+export ZSH=$HOME/.oh-my-zsh
+#主题选择
+ZSH_THEME="agnoster"
+#插件启用
+plugins=(git
+	go
+	)
+
+source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh/plugins/incr/incr*.zsh
+#
+export MANPATH="/usr/local/man:$MANPATH"
+export LANG="zh_CN.UTF-8"
+export LANGUAGE="zh_CN.GB18030:zh_CN.GB2312:zh_CN"
+export SUPPORTED="zh_CN.UTF-8:zh_CN:zh:en_US.UTF-8:en_US:en"
+export SYSFONT="lat0-sun16"
+alias cman='man -M /usr/share/zhman/man/zh_CN'
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
+alias _chroot="termux-chroot"
+alias lsl="ls -list"
+alias lsa="ls -all"
